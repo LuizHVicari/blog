@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<nav class="flex flex-row bg-slate-950 py-5 justify-between">
+   <div class="flex flex-row ms-20 space-x-5">
+    <a class="font-bold" href="{% url 'core:home' %}">{% trans "Home Page" %}</a>
+    <a href="#">{% trans "Portfolio" %}</a>
+    <a href="#">{% trans "Projects" %}</a>
+    <a href="#">{% trans "Academic" %}</a>
+
+    <form action="{% url "set_language" %}" method="post">
+        {% csrf_token %}
+
+        <input type="hidden" name="next" value="{{ redirect_to }}">
+
+        <select name="language" class="bg-slate-700 px-2 rounded-lg">
+            <option value="en">English</option>
+            <option value="pt">Português</option>
+        </select>
+
+        <input type="submit" value="{% trans "Change language" %}">
+    </form>
+
+   </div>
+   <div class="flex flex-row me-20 space-x-5">
+    {% if user.is_authenticated %}
+        {% if user.is_staff %}
+            <a href="{% url 'admin:index' %}"></a>
+        {% endif %}
+        <a href="#">{% trans "Log out" %}</a>
+    {% else %}
+        <a href="#">{% trans "Log in" %}</a>
+        <a href="#">{% trans "Create Account" %}</a>
+    {% endif %}
+   </div>
+  </nav>

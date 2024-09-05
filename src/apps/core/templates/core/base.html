@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load l10n %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+            {% trans "Blog" %}
+        
+        {% endblock title %}
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100">
+
+    {% include "components/topbar.html" %}
+
+
+    <div class="h-3/4 bg-slate-800 mx-10 my-5 p-5 rounded-lg">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+</body>
+</html>
