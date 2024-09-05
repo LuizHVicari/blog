@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-05 18:07-0300\n"
-"PO-Revision-Date: 2024-09-05 18:08-0300\n"
+"POT-Creation-Date: 2024-09-05 20:23-0300\n"
+"PO-Revision-Date: 2024-09-05 20:25-0300\n"
 "Last-Translator:   <email@email.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,46 +19,145 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
+#: .\apps\core\models.py:7
+msgid "Beginner"
+msgstr "Iniciante"
+
 #: .\apps\core\models.py:8
-msgid "Personal Info"
-msgstr "Informações Pessoais"
+msgid "Intermediate"
+msgstr "Intermediário"
 
 #: .\apps\core\models.py:9
-msgid "Personal Infos"
-msgstr "Informações Pessoais"
+msgid "Advanced"
+msgstr "Avançado"
 
-#: .\apps\core\models.py:11
+#: .\apps\core\models.py:12
+#| msgid "Change language"
+msgid "Programming Language"
+msgstr "Linguagem de Programação"
+
+#: .\apps\core\models.py:13
+msgid "Skill"
+msgstr "Habilidade"
+
+#: .\apps\core\models.py:14
+msgid "Framework"
+msgstr "Framework"
+
+#: .\apps\core\models.py:15
+#| msgid "Change language"
+msgid "Language"
+msgstr "Idioma"
+
+#: .\apps\core\models.py:20
+msgid "Ability"
+msgstr "Habilidade"
+
+#: .\apps\core\models.py:21
+msgid "Abilities"
+msgstr "Habilidades"
+
+#: .\apps\core\models.py:25
+#| msgid "name"
+msgid "key name"
+msgstr "nome chave"
+
+#: .\apps\core\models.py:26
+msgid "the name that will appear on the admin page"
+msgstr "o nome que aparecerá na página de administrador"
+
+#: .\apps\core\models.py:29 .\apps\core\models.py:48
 msgid "name"
 msgstr "nome"
 
-#: .\apps\core\models.py:12
-msgid "birth date"
-msgstr "data de nascimento"
+#: .\apps\core\models.py:31
+msgid "level"
+msgstr "nível"
 
-#: .\apps\core\models.py:13
-msgid "phone number"
-msgstr "número de telefone"
+#: .\apps\core\models.py:32
+msgid "type"
+msgstr "tipo"
 
-#: .\apps\core\models.py:15
+#: .\apps\core\models.py:33
+msgid "weight"
+msgstr "peso"
+
+#: .\apps\core\models.py:33
+msgid "order in wich it will appear on the index page"
+msgstr "ordem na qual vai aparecer na página inicial"
+
+#: .\apps\core\models.py:35 .\apps\core\models.py:57
 msgid "created at"
 msgstr "criado em"
 
-#: .\apps\core\models.py:16
+#: .\apps\core\models.py:36 .\apps\core\models.py:58
 msgid "updated at"
 msgstr "atualizado em"
+
+#: .\apps\core\models.py:45
+msgid "Personal Info"
+msgstr "Informações Pessoais"
+
+#: .\apps\core\models.py:46
+msgid "Personal Infos"
+msgstr "Informações Pessoais"
+
+#: .\apps\core\models.py:51
+#| msgid "About me"
+msgid "about me"
+msgstr "Sobre mim"
+
+#: .\apps\core\models.py:52
+#| msgid "Personal Info"
+msgid "personal life"
+msgstr "Vida pessoal"
+
+#: .\apps\core\models.py:55
+msgid "abilities"
+msgstr "habilidades"
 
 #: .\apps\core\templates\core\base.html:13
 msgid "Blog"
 msgstr "Blog"
+
+#: .\apps\core\templates\core\base.html:55
+msgid "Email me"
+msgstr "Mande um e-mail"
+
+#: .\apps\core\templates\core\base.html:60
+msgid "Send me a message"
+msgstr "Mande uma mensagem"
 
 #: .\apps\core\templates\core\index.html:7
 #: .\templates\components\topbar.html:5
 msgid "Home Page"
 msgstr "Página Inicial"
 
-#: .\apps\core\templates\core\index.html:12
+#: .\apps\core\templates\core\index.html:15
 msgid "About me"
 msgstr "Sobre mim"
+
+#: .\apps\core\templates\core\index.html:20
+#| msgid "Personal Info"
+msgid "Personal Life"
+msgstr "Vida Pessoal"
+
+#: .\apps\core\templates\core\index.html:28
+#| msgid "Change language"
+msgid "Programming Languages"
+msgstr "Linguagens de Programação"
+
+#: .\apps\core\templates\core\index.html:41
+msgid "Skills"
+msgstr "Habilidades"
+
+#: .\apps\core\templates\core\index.html:53
+msgid "Frameworks"
+msgstr "Frameworks"
+
+#: .\apps\core\templates\core\index.html:64
+msgid "Languages"
+msgstr "Idiomas"
 
 #: .\templates\components\topbar.html:6
 msgid "Portfolio"
@@ -76,6 +175,11 @@ msgstr "Acadêmico"
 msgid "Change language"
 msgstr "Mudar idioma"
 
+#: .\templates\components\topbar.html:27
+#| msgid "Home Page"
+msgid "Admin Page"
+msgstr "Página de Administrador"
+
 #: .\templates\components\topbar.html:29
 msgid "Log out"
 msgstr "Sair"
@@ -87,3 +191,9 @@ msgstr "Entrar"
 #: .\templates\components\topbar.html:32
 msgid "Create Account"
 msgstr "Criar Conta"
+
+#~ msgid "birth date"
+#~ msgstr "data de nascimento"
+
+#~ msgid "phone number"
+#~ msgstr "número de telefone"

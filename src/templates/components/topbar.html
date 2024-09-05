@@ -17,14 +17,14 @@
             <option value="pt">Português</option>
         </select>
 
-        <input type="submit" value="{% trans "Change language" %}">
+        <input type="submit" value="{% trans "Change language" %}" class="mx-2">
     </form>
 
    </div>
    <div class="flex flex-row me-20 space-x-5">
     {% if user.is_authenticated %}
-        {% if user.is_staff %}
-            <a href="{% url 'admin:index' %}"></a>
+        {% if user.is_superuser  %}
+            <a href="{% url 'admin:index' %}">{% trans "Admin Page" %}</a>
         {% endif %}
         <a href="#">{% trans "Log out" %}</a>
     {% else %}

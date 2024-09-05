@@ -9,7 +9,68 @@
 
 
 {% block content %}
-    <h1 class="text-lg font-bold">{% trans "About me" %}</h1>
+<div class="divide-y-2 divide-slate-700 bg-slate-800 rounded-lg my-5 p-5">
+    <div class="py-2">
+        <h1 class="text-2xl font-black mb-2">{{ name }}</h1>
+        <h2 class="text-xl font-bold">{% trans "About me" %}</h2>
+        <p class="mx-5 text-justify text-lg">{{ about_me }}</p>
+    </div>
+    
+    <div class="py-2">
+        <h2 class="text-xl font-bold">{% trans "Personal Life" %}</h2>
+        <p class="mx-5 text-justify text-lg">{{ personal_life }}</p>
+    </div>
+</div>
+
+<div class="flex flex-row justify-center space-x-5">
+    <div class='flex flex-col bg-slate-800 w-1/4 h-96 rounded-lg p-2'>
+        <div class="flex flex-row ps-2">
+            <h2 class="text-lg font-bold">{% trans "Programming Languages" %}</h2>
+            <i class="fa-solid fa-computer mx-2 py-2"></i>
+        </div>
+
+        <ul class="ps-2 mt-3">
+            {% for p in programming_languages %}
+                <li>{{ p.name}}, {{ p.level | capfirst }}</li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <div class='flex flex-col bg-slate-800 w-1/4 h-96 rounded-lg p-2 overflow-y-hidden'>
+        <div class="flex flex-row ps-2">
+            <h2 class="text-lg font-bold">{% trans "Skills" %}</h2>
+            <i class="fa-solid fa-hand-fist mx-2 py-2"></i>
+        </div>
+
+        <ul class="ps-2 mt-3">
+            {% for s in skills %}
+                <li>{{ s.name}}, {{ s.level | capfirst }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class='flex flex-col bg-slate-800 w-1/4 h-96 rounded-lg p-2 overflow-y-hidden'>
+        <div class="flex flex-row ps-2">
+            <h2 class="text-lg font-bold">{% trans "Frameworks" %}</h2>
+            <i class="fa-solid fa-book mx-2 py-2"></i>
+        </div>
+        <ul class="ps-2 mt-3">
+            {% for f in frameworks %}
+                <li>{{ f.name}}, {{ f.level | capfirst }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class='flex flex-col bg-slate-800 w-1/4 h-96 rounded-lg p-2 overflow-y-hidden'>
+        <div class="flex flex-row ps-2">
+            <h2 class="text-lg font-bold">{% trans "Languages" %}</h2>
+            <i class="fa-solid fa-language mx-2 py-2"></i>
+        </div>
+        <ul class="ps-2 mt-3">
+            {% for l in languages %}
+                <li>{{ l.name}}, {{ l.level | capfirst }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
 
 {% endblock content %}

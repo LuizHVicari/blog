@@ -105,3 +105,16 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PARLER_DEFAULT_LANGUAGE_CODE = 'en-us'
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en',},
+        {'code': 'pt',},
+    ),
+    'default': {
+        'fallbacks': ['en'],      
+        'hide_untranslated': False, 
+    }
+}
