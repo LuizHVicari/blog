@@ -1,0 +1,11 @@
+{% load i18n %}
+
+{% extends "error_base.html" %}
+
+{% block error %}
+    {% trans "Error!" %}
+{% endblock error %}
+
+{% block message %}
+{% trans "Wow, an unexpected error happened!!! If you're willing to, please contact me." %}
+{% endblock message %}

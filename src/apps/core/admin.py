@@ -1,5 +1,5 @@
 from django.contrib import admin
-from parler.admin import TranslatableAdmin, TranslatableInlineModelAdmin
+from parler.admin import TranslatableAdmin
 
 from .models import PersonalInfo, Ability
 

@@ -1,0 +1,11 @@
+{% load i18n %}
+
+{% extends "error_base.html" %}
+
+{% block error %}
+    {% trans "Not found!" %}
+{% endblock error %}
+
+{% block message %}
+    {% trans "Looks like this page does not exists! Please try again later or contact me." %}
+{% endblock message %}

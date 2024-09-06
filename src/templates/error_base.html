@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+
+{% block title %} {% trans "Not found!" %} {% endblock title %}
+
+{% block content %}
+
+<div>
+    <h1 class="text-9xl">
+        {% block error %}
+            {% trans "An error just happened!" %}
+        {% endblock error %}
+    </h1>
+
+    <h2 class="text-3xl">
+        {% block message %}
+            {% trans "Something went wrong. Please contact me." %}
+        {% endblock message %}
+    </h2>
+</div>
+
+{% endblock content %}

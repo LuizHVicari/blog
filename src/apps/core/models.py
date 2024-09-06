@@ -38,6 +38,16 @@ class Ability(TranslatableModel):
     
     def __str__(self):
         return self.key_name
+    
+    @property
+    def translated_level(self):
+       match self.level:
+            case LevelChoices.ADVANCED:
+               return gettext_lazy('Advanced')
+            case LevelChoices.INTERMEDIATE:
+               return gettext_lazy('Intermediate')
+            case LevelChoices.BEGINNER:
+               return gettext_lazy('Beginner')
 
 
 class PersonalInfo(TranslatableModel):
