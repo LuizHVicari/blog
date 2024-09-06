@@ -60,7 +60,8 @@ WORKDIR $APP_HOME
 
 COPY ./src $APP_HOME
 
-
 COPY . .
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "blog.wsgi"]
+EXPOSE 8000
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "blog.wsgi:application"]
