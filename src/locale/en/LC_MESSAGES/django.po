@@ -9,265 +9,239 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-05 22:56-0300\n"
-"PO-Revision-Date: 2024-09-05 23:01-0300\n"
-"Last-Translator:   <email@email.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
-
 #: .\apps\core\models.py:7 .\apps\core\models.py:50
 msgid "Beginner"
-msgstr "Iniciante"
+msgstr ""
 
 #: .\apps\core\models.py:8 .\apps\core\models.py:48
 msgid "Intermediate"
-msgstr "Intermediário"
+msgstr ""
 
 #: .\apps\core\models.py:9 .\apps\core\models.py:46
 msgid "Advanced"
-msgstr "Avançado"
+msgstr ""
 
 #: .\apps\core\models.py:12
 msgid "Programming Language"
-msgstr "Linguagem de Programação"
+msgstr ""
 
 #: .\apps\core\models.py:13
 msgid "Skill"
-msgstr "Habilidade"
+msgstr ""
 
 #: .\apps\core\models.py:14
 msgid "Framework"
-msgstr "Framework"
+msgstr ""
 
 #: .\apps\core\models.py:15
 msgid "Language"
-msgstr "Idioma"
+msgstr ""
 
 #: .\apps\core\models.py:20
 msgid "Ability"
-msgstr "Habilidade"
+msgstr ""
 
 #: .\apps\core\models.py:21
 msgid "Abilities"
-msgstr "Habilidades"
+msgstr ""
 
 #: .\apps\core\models.py:25
 msgid "key name"
-msgstr "nome chave"
+msgstr ""
 
 #: .\apps\core\models.py:26
 msgid "the name that will appear on the admin page"
-msgstr "o nome que aparecerá na página de administrador"
+msgstr ""
 
 #: .\apps\core\models.py:29 .\apps\core\models.py:58
 msgid "name"
-msgstr "nome"
+msgstr ""
 
 #: .\apps\core\models.py:31
 msgid "level"
-msgstr "nível"
+msgstr ""
 
 #: .\apps\core\models.py:32 .\apps\posts\models.py:23
 msgid "type"
-msgstr "tipo"
+msgstr ""
 
 #: .\apps\core\models.py:33
 msgid "weight"
-msgstr "peso"
+msgstr ""
 
 #: .\apps\core\models.py:33
 msgid "order in wich it will appear on the index page"
-msgstr "ordem na qual vai aparecer na página inicial"
+msgstr ""
 
 #: .\apps\core\models.py:35 .\apps\core\models.py:67 .\apps\posts\models.py:25
 msgid "created at"
-msgstr "criado em"
+msgstr ""
 
 #: .\apps\core\models.py:36 .\apps\core\models.py:68 .\apps\posts\models.py:26
 msgid "updated at"
-msgstr "atualizado em"
+msgstr ""
 
 #: .\apps\core\models.py:55
 msgid "Personal Info"
-msgstr "Informações Pessoais"
+msgstr ""
 
 #: .\apps\core\models.py:56
 msgid "Personal Infos"
-msgstr "Informações Pessoais"
+msgstr ""
 
 #: .\apps\core\models.py:61
 msgid "about me"
-msgstr "Sobre mim"
+msgstr ""
 
 #: .\apps\core\models.py:62
 msgid "personal life"
-msgstr "Vida pessoal"
+msgstr ""
 
 #: .\apps\core\models.py:65
 msgid "abilities"
-msgstr "habilidades"
+msgstr ""
 
 #: .\apps\core\templates\core\base.html:13
 msgid "Blog"
-msgstr "Blog"
+msgstr ""
 
 #: .\apps\core\templates\core\base.html:55
 msgid "Email me"
-msgstr "Mande um e-mail"
+msgstr ""
 
 #: .\apps\core\templates\core\base.html:60
 msgid "Send me a message"
-msgstr "Mande uma mensagem"
+msgstr ""
 
-#: .\apps\core\templates\core\index.html:7
-#: .\templates\components\topbar.html:5
+#: .\apps\core\templates\core\index.html:7 .\templates\components\topbar.html:5
 msgid "Home Page"
-msgstr "Página Inicial"
+msgstr ""
 
 #: .\apps\core\templates\core\index.html:15
 msgid "About me"
-msgstr "Sobre mim"
+msgstr ""
 
 #: .\apps\core\templates\core\index.html:20
 msgid "Personal Life"
-msgstr "Vida Pessoal"
+msgstr ""
 
 #: .\apps\core\templates\core\index.html:28
 msgid "Programming Languages"
-msgstr "Linguagens de Programação"
+msgstr ""
 
 #: .\apps\core\templates\core\index.html:41
 msgid "Skills"
-msgstr "Habilidades"
+msgstr ""
 
 #: .\apps\core\templates\core\index.html:53
 msgid "Frameworks"
-msgstr "Frameworks"
+msgstr ""
 
 #: .\apps\core\templates\core\index.html:64
 msgid "Languages"
-msgstr "Idiomas"
+msgstr ""
 
 #: .\apps\posts\models.py:7 .\apps\posts\models.py:37
 #: .\templates\components\topbar.html:6
 msgid "Portfolio"
-msgstr "Portifólio"
+msgstr ""
 
 #: .\apps\posts\models.py:8 .\apps\posts\models.py:39
 #: .\templates\components\topbar.html:7
 msgid "Projects"
-msgstr "Projetos"
+msgstr ""
 
 #: .\apps\posts\models.py:9 .\apps\posts\models.py:41
 #: .\templates\components\topbar.html:8
 msgid "Academic"
-msgstr "Acadêmico"
+msgstr ""
 
 #: .\apps\posts\models.py:14 .\apps\posts\templates\posts\post-list.html:22
 msgid "cover image"
-msgstr "imagem de capa"
+msgstr ""
 
 #: .\apps\posts\models.py:17
 msgid "description"
-msgstr "descrição"
+msgstr ""
 
 #: .\apps\posts\models.py:18
 msgid "text"
-msgstr "texto"
+msgstr ""
 
 #: .\apps\posts\models.py:19
 msgid "title"
-msgstr "título"
+msgstr ""
 
 #: .\apps\posts\models.py:20
 msgid "category"
-msgstr "categoria"
+msgstr ""
 
 #: .\apps\posts\templates\posts\post-list.html:7
 #: .\apps\posts\templates\posts\post-list.html:14
 msgid "Posts"
-msgstr "Publicações"
+msgstr ""
 
 #: .\apps\posts\templates\posts\post-list.html:28
 #: .\apps\posts\templates\posts\post.html:19
-#, fuzzy
-#| msgid "updated at"
 msgid "Updated at"
-msgstr "atualizado em"
+msgstr ""
 
 #: .\apps\posts\templates\posts\post-list.html:29
 #: .\apps\posts\templates\posts\post.html:14
 msgid "Category"
-msgstr "Categoria"
+msgstr ""
 
 #: .\apps\posts\templates\posts\post.html:18
 #: .\apps\posts\templates\posts\post.html:21
-#, fuzzy
-#| msgid "created at"
 msgid "Created at"
-msgstr "criado em"
+msgstr ""
 
 #: .\apps\posts\views.py:28
 msgid "Could not find this post type."
-msgstr "Não foi possível encontrar esse tipo de publicação."
+msgstr ""
 
 #: .\templates\404.html:6 .\templates\error_base.html:3
 msgid "Not found!"
-msgstr "Não encontrado!"
+msgstr ""
 
 #: .\templates\404.html:10
 msgid ""
 "Looks like this page does not exists! Please try again later or contact me."
 msgstr ""
-"Parece que essa página não existe! Por favor, tente novamente mais tarde ou "
-"entre em contato comigo."
 
 #: .\templates\500.html:6
 msgid "Error!"
-msgstr "Erro!"
+msgstr ""
 
 #: .\templates\500.html:10
 msgid ""
-"Wow, an unexpected error happened!!! If you're willing to, please contact "
-"me."
+"Wow, an unexpected error happened!!! If you're willing to, please contact me."
 msgstr ""
-"Ooops, um erro inesperado aconteceu!!!  SE você quiser, por favor me "
-"contate."
 
 #: .\templates\components\topbar.html:16
-#, fuzzy
-#| msgid "Change language"
 msgid "Select language"
-msgstr "Mudar idioma"
+msgstr ""
 
 #: .\templates\components\topbar.html:29
 msgid "Admin Page"
-msgstr "Página de Administrador"
+msgstr ""
 
 #: .\templates\components\topbar.html:31
 msgid "Log out"
-msgstr "Sair"
+msgstr ""
 
 #: .\templates\error_base.html:10
 msgid "An error just happened!"
-msgstr "Um erro acabou de acontecer!"
+msgstr ""
 
 #: .\templates\error_base.html:16
 msgid "Something went wrong. Please contact me."
-msgstr "Algo deu errado. Por favor me contate."
-
-#~ msgid "Log in"
-#~ msgstr "Entrar"
-
-#~ msgid "Create Account"
-#~ msgstr "Criar Conta"
-
-#~ msgid "birth date"
-#~ msgstr "data de nascimento"
-
-#~ msgid "phone number"
-#~ msgstr "número de telefone"
+msgstr ""
