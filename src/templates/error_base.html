@@ -1,5 +1,7 @@
 {% extends "core/base.html" %}
 
+{% load i18n %}
+
 {% block title %} {% trans "Not found!" %} {% endblock title %}
 
 {% block content %}
@@ -11,7 +13,7 @@
         {% endblock error %}
     </h1>
 
-    <h2 class="text-3xl">
+    <h2 class="text-3xl mt-8">
         {% block message %}
             {% trans "Something went wrong. Please contact me." %}
         {% endblock message %}
