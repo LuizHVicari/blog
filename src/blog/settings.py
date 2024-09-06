@@ -14,6 +14,13 @@ ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=str).split(' ')
 
 CSRF_TRUSTED_ORIGINS = config('DJANGO_CSRF_TRUSTED_ORIGINS', cast=str).split(' ')
 
+SECURE_HSTS_SECONDS=config('DJANGO_SECURE_HSTS_SECONDS', cast=bool, default=True)
+SECURE_SSL_REDIRECT=config('DJANGO_SECURE_SSL_REDIRECT', cast=bool, default=True)
+SESSION_COOKIE_SECURE = config('DJANGO_SESSION_COOKIE_SECURE', cast=bool, default=True)
+CSRF_COOKIE_SECURE = config('DJANGO_CSRF_COOKIE_SECURE', cast=bool, default=True)
+SECURE_HSTS_PRELOAD = config('DJANGO_SECURE_HSTS_PRELOAD', cast=bool, default=str)
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
