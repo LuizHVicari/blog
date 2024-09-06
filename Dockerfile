@@ -62,3 +62,5 @@ COPY ./src $APP_HOME
 
 
 COPY . .
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "blog.wsgi"]
