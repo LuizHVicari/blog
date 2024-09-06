@@ -27,10 +27,7 @@
         {% if user.is_superuser  %}
             <a href="{% url 'admin:index' %}">{% trans "Admin Page" %}</a>
         {% endif %}
-        <a href="#">{% trans "Log out" %}</a>
-    {% else %}
-        <a href="#">{% trans "Log in" %}</a>
-        <a href="#">{% trans "Create Account" %}</a>
+        <a href="{% url 'core:logout' %}">{% trans "Log out" %}</a>
     {% endif %}
    </div>
   </nav>

@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
+
 from .models import PersonalInfo, AbilityType, Ability, LevelChoices
 
 
@@ -30,3 +33,8 @@ def home(request, *args, **kwargs):
     }
 
     return render(request, 'core/index.html', context)
+
+@login_required
+def logout_view(request):
+    logout(request)
+    return redirect('core:home')

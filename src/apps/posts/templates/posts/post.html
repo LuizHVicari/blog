@@ -14,8 +14,12 @@
             <p class="text-slate-600">{% trans "Category" %}: {{ post.category | title }}</p>
         </div>
         <div class="flex flex-row space-x-5">
-            <p class="text-slate-500">{% trans "Created at" %}: {% localize on %} {{ post.created_at.date }} {% endlocalize %}</p>
-            <p class="text-slate-500">{% trans "Updated at" %}: {% localize on %} {{ post.updated_at.date }} {% endlocalize %}</p>
+            {% if post.created_at.date != post.updated_at.date %}
+                <p class="text-slate-500">{% trans "Created at" %}: {% localize on %} {{ post.created_at.date }} {% endlocalize %}</p>
+                <p class="text-slate-500">{% trans "Updated at" %}: {% localize on %} {{ post.updated_at.date }} {% endlocalize %}</p>
+            {% else %}
+                <p class="text-slate-500">{% trans "Created at" %}: {% localize on %} {{ post.created_at.date }} {% endlocalize %}</p>
+            {% endif %}
         </div>
         <p class="text-slate-300 text-justify px-4">{{ post.description }}</p>
         <hr class="border-slate-500">
